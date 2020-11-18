@@ -1,1 +1,8 @@
-<p>card works!</p>
+<div [class.danger]="pokemonData.damage > 50" 
+    [class.row]='mode === "row"'
+     [class.card]='mode !== "row"'>
+     <img [src]='src'>
+    <p>{{pokemonData.name}}</p>
+    <p>Damage: {{pokemonData.damage}}</p>
+    <button (click)="onCatch()"> {{isCatched ? "Отпустить": "Поймать"}} </button>
+</div>

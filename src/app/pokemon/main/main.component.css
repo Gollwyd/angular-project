@@ -1,0 +1,18 @@
+main {
+    border: 1px solid black ;
+    
+}
+.card {
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    
+}

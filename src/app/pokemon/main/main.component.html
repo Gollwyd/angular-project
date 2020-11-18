@@ -1,1 +1,5 @@
-<p>main works!</p>
+<main [class.row]='mode === "row"' [class.card]='mode !== "row"'>
+
+    <app-card *ngFor="let pokemon of pokemons" [pokemonData]='pokemon' [mode]='mode'></app-card>
+    
+</main>
