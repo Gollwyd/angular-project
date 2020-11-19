@@ -19,6 +19,10 @@ export class MainComponent implements OnInit {
   constructor() {
     this.pokemons = pokemons;
    }
+   onCatchPokemon(p: {name: string, isCatched: boolean}): void{
+    
+    console.log(`Покемон ${p.name} был ${p.isCatched ? 'пойман' : 'отпущен'}`);
+   }
   
   ngOnInit(): void {
    
